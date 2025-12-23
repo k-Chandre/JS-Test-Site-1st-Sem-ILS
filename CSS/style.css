@@ -1,0 +1,35 @@
+body {
+    background-color: #202122;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-top-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+}
+
+.task-item {
+    transition: background 0.2s;
+}
+
+.task-item:hover {
+    background-color: #f8f9fa;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.category-badge {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
