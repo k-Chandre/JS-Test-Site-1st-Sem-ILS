@@ -4,8 +4,9 @@ $(document).ready(function() {
 
     $('#user-name').text(currentUser.name)
     renderTasks()
-    $('#warbler').click(() => { window.open("Warbler Site by Julian Flores/Main.html", "_blank")});
-    $('#logout').click(() => { localStorage.removeItem("currentUser"); window.location.href = "login.html"; });
+    $('#warbler').click(() => {window.open("Warbler Site by Julian Flores/Main.html", "_blank")});
+    $('#logout').click(() => {localStorage.removeItem("currentUser"); 
+                                window.location.href = "login.html"; });
 
     $('#btn-add').click(function() {
         let name = $('#task-name').val()
@@ -53,17 +54,21 @@ $(document).ready(function() {
     });
 
     $(document).on('click', '.btn-edit', function() {
+
         let id = $(this).closest('li').data('id');
         let task = currentUser.tasks.find(t => t.id == id);
         let newName = prompt("Edit Name:", task.name);
+
         if(newName){task.name = newName; saveAndRender()}
     });
 
     function saveAndRender() {
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
+
         let users = JSON.parse(localStorage.getItem("users"));
         let userIndex = users.findIndex(u => u.email === currentUser.email);
         users[userIndex] = currentUser;
+        
         localStorage.setItem("users", JSON.stringify(users));
         renderTasks();
     }
