@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     $('#user-name').text(currentUser.name)
     renderTasks()
-
+    $('#warbler').click(() => { window.open("Warbler Site by Julian Flores/Main.html", "_blank")});
     $('#logout').click(() => { localStorage.removeItem("currentUser"); window.location.href = "login.html"; });
 
     $('#btn-add').click(function() {
@@ -13,9 +13,9 @@ $(document).ready(function() {
         let classification = $('#task-class').val();
         let description = $('#task-desc').val()
 
-        if(!name || !time) 
-            { alert("Fill name and time!")
-             return
+        if(!name || !time){
+            alert("Fill name and time!")
+            return
             }
 
         currentUser.tasks.push({ 
@@ -26,8 +26,8 @@ $(document).ready(function() {
             description, 
             completed: false 
         });
+        
         saveAndRender();
-
         $('#task-name, #task-time, #task-desc').val('');
     });
 
@@ -56,14 +56,14 @@ $(document).ready(function() {
         let id = $(this).closest('li').data('id');
         let task = currentUser.tasks.find(t => t.id == id);
         let newName = prompt("Edit Name:", task.name);
-        if(newName) { task.name = newName; saveAndRender(); }
+        if(newName){task.name = newName; saveAndRender()}
     });
 
     function saveAndRender() {
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
         let users = JSON.parse(localStorage.getItem("users"));
-        let idx = users.findIndex(u => u.email === currentUser.email);
-        users[idx] = currentUser;
+        let index = users.findIndex(u => u.email === currentUser.email);
+        users[index] = currentUser;
         localStorage.setItem("users", JSON.stringify(users));
         renderTasks();
     }
@@ -74,8 +74,8 @@ $(document).ready(function() {
             let statusClass = task.completed ? 'completed' : '';
 
 
-            $('#task-list').append(`
-                <li class="list-group-item d-flex justify-content-between align-items-center taskentry ${statusClass}" data-id="${task.id}">
+            $('#task-list').append(
+                `<li class="list-group-item d-flex justify-content-between align-items-center taskentry ${statusClass}" data-id="${task.id}">
                     <div class="d-flex align-items-center">
                         <input type="checkbox" class="form-check-input me-3 check-complete" ${task.completed ? 'checked' : ''}>
                         <div>
@@ -87,10 +87,10 @@ $(document).ready(function() {
                         <button class="btn btn-sm btn-outline-warning btn-edit me-2">Edit</button>
                         <button class="btn btn-sm btn-outline-danger btn-delete">Delete</button>
                     </div>
-                </li>
-            `);
-            
-            
+                </li>`
+            );
+
+
         });
     }
 });

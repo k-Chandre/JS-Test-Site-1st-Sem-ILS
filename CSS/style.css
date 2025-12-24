@@ -33,3 +33,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+/* Custom Light Green Style */
+#warbler {
+    color: #4a8353; /* LightGreen Hex */
+    border-color: #4a8353;
+}
+
+#warbler:hover {
+    background-color: #90EE90;
+    color: rgb(0, 0, 0);
+}

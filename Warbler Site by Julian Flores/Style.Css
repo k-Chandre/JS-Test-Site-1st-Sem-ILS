@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.New {
+    color: green;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.Wala {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 200%;
+    text-align: center;
+}
+
+.Warb {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 400%;
+    text-align: center;
+}  
+
+.Jiejie {
+    font-size: 130%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 30;
+    transition: all 500ms;
+}
+
+.Jiejie a:hover {
+    font-size:25px;
+    font-size-adjust: 20px;
+    transition: all 500ms;
+    color: lightgreen;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.gwapa {
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+header {
+    background-image: url(Cover.png);
+    color: #fff;
+    padding: 20px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.featured-article {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.featured-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.featured-article h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.article {
+    font-size: 1.2em;
+    color: #363636;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+footer {    
+    background-image: url(sapa.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    height: 70px;
+}
+

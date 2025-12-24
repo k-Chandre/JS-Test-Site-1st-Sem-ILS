@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILS Quarter 1 - HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./Assets/Icons/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="./Assets/Icons/site.webmanifest">
+    <meta name="description" content="A sample website for the 1st Quarter ILS">
+</head>
+<body>
+    <nav>
+        <div class="Logo"><img class="navIcon" src="./Assets/Icons/favicon-32x32.png"></div>
+        <div class="links">
+            <ul>
+                <li><button data-page="headingDemo">Headings</button></li>
+                <li><button data-page="textDemo">Text Formatting and Image</button></li>
+                <li><button data-page="formDemo">Forms</button></li>
+            </ul>
+        </div>
+        <div class="titulo-name"><a href="./Warbler Site by Julian Flores/Main.html">Warbler by Julian Flores</a></div>
+    </nav>
+    <div class="EntryPoint" id="Entry">
+
+    </div>
+    <div id="headingDemo" class="H1-6Headers">
+        <h1 class="HofN">h1 Sample</h1>
+        <h2 class="HofN">h2 Sample</h2>
+        <h3 class="HofN">h3 Sample</h3>
+        <h4 class="HofN">h4 Sample</h4>
+        <h5 class="HofN">h5 Sample</h5>
+        <h6 class="HofN">h6 Sample</h6>
+    </div>
+    <div id="textDemo" class="Text-Formating">
+        <img class="launch" src="./Assets/Space1.png" height="500px" width="700px" alt="Image of a rocket launch">
+        <img class="launch" src="./Assets/space2.png" height="500px" width="700px" alt="Image of a rocket launch">
+        <h1>Text Formatting Demonstration</h1><br>
+        <p>Humanity's progress is a beautiful reflection of our creativity, resilience, and shared efforts.<br> Over time, we've gone from simple tools to building cities, exploring the stars, and making groundbreaking medical advancements. We've found ways to connect across vast distances, turning what once seemed impossible into everyday reality. But what's truly inspiring isn't just the technology or the achievements themselves—it's our constant drive to learn, to improve, and to create a world where everyone can thrive. Through all the challenges and breakthroughs, the journey of humanity shows just how far we can go when we come together and push forward.
+        </p>
+    </div>
+    <!-- torture -->
+    <div align="center" id="formDemo" class="Forms-Area">
+        <form action="https://www.sti.edu/" method="post">
+            <!-- torture -->
+            <fieldset>
+                <legend align="center">Personal Information</legend>
+    
+                <label for="FirstName">First Name:</label>
+                <input name="FirstName" type="text">
+    
+                <label for="LastName">Last Name:</label>
+                <input name="LastName" type="text">
+    
+                <label for="MiddleName">Middle Name (Unabbreviated): </label>
+                <input name="MiddleName"  type="text">
+    
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="Gender">Male
+                <input type="radio" name="Gender">Female<br>
+    
+                <label for="Birthdate">Birthdate:</label>
+                <input type="date" name="Birthdate">
+    
+                <label for="PhoneNumber">Phone Number:</label>
+                <input name="PhoneNumber" type="tel">
+                <!-- torture -->
+    
+            </fieldset>
+            <fieldset>
+                <legend align="center">Preference</legend>
+    
+                <label for="language">Favorite Programming Language:</label>
+                <input name="language" type="text">
+    
+                <label for="device">Preferred Device (Phones, Laptop, etc.):</label>
+                <input type="text" name="device">
+    
+            </fieldset>
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+        <!-- torture -->
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <ul>Members:
+            <li>Keane Guadarrama</li>
+            <li>Julian Flores</li>
+            <li>John Quinn Agonace</li>
+            <li>Raccine Andales</li>
+            <li>John Mark Guanco</li>
+        </ul>
+    </footer>
+</body>
+</html>

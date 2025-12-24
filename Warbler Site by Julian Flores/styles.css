@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    margin: 0;
+    color: white;
+}
+body{
+    font-family: Raleway;
+    background-image: url("./Assets/makiplays-retrowave.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    padding: 1.3rem 2rem 1.3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 5px rgb(0, 240, 255);
+    box-shadow: 0 0 15px #00f0ff, 0 0 30px #ff00ff;
+}
+ul{ 
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(45, 226, 230);
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 1s;
+    text-shadow: 0px 0px 10px rgb(0, 240, 255), 0px 0px 20px #ff00ff;
+}
+li button{
+    font-weight: bold;
+    border: 2px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    background: transparent;
+    color: rgb(45, 226, 230);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: 1s;
+    text-shadow: 0px 0px 10px rgb(0, 240, 255), 0px 0px 20px #ff00ff;
+}
+li button:hover {
+    background-color: #5c2c6d;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #ff6ec7;
+    text-shadow: 0px 0px 20px #ff6ec7, 0px 0px 30px #ff00ff;
+}
+li button:active {
+    transform: scale(70%);
+}
+.titulo-name a:hover {
+    color: #ff6ec7;
+    text-shadow: 0px 0px 20px #ff6ec7, 0px 0px 30px #ff00ff;
+}
+#headingDemo .HofN {
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #00f0ff;
+    text-shadow: 0px 0px 10px rgb(0, 240, 255), 0px 0px 20px #ff00ff;
+}
+#textDemo{
+    text-align: center;
+    padding-top: 10rem;
+    font-size: larger;
+}
+.launch {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 4px solid #ff6ec7;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00f0ff, 0 0 60px #ff00ff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.launch:hover {
+    box-shadow: 0 0 30px #ff00ff, 0 0 60px #00f0ff, 0 0 90px #ff00ff;
+    transform: scale(1.05);
+}
+h1 {
+    font-size: 2.5em;
+    color: #00f0ff;
+    text-shadow: 0px 0px 10px rgb(0, 240, 255), 0px 0px 20px #ff00ff;
+    animation: glow 2s infinite alternate;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ffb3ff;
+    line-height: 1.6;
+    text-shadow: 0px 0px 5px #ff6ec7;
+    margin-bottom: 10rem;
+}
+#headingDemo, #textDemo, #formDemo, #Entry {
+    min-height: 90vh;
+    display: flex;
+}
+form {
+        max-width: 40%;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: transparent;
+        border: 2px solid #ff6ec7;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px rgba(255, 110, 199, 0.7);
+}
+fieldset {
+    margin-bottom: 25px;
+    border: 2px solid #ff6ec7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 110, 199, 0.7);
+}
+legend {
+    font-size: 1.5em;
+    color: #00f0ff;
+    text-shadow: 0px 0px 5px #ff6ec7;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #00f0ff;
+    text-shadow: 0px 0px 10px #ff6ec7;
+}
+input[type="text"], input[type="tel"], input[type="date"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0px 0px 10px rgba(255, 110, 199, 0.5);
+        background-color: transparent;
+}
+input[type="radio"] {
+        margin-right: 5px;
+}
+#submitButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+}
+#headingDemo, #textDemo, #formDemo{
+            display: none;
+}
+    
+#submitButton {
+    background-color: #ff6ec7;
+    border: none;
+    color: #00f0ff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(255, 110, 199, 0.7);
+}
+footer {
+    background-color: #2e026b;
+    padding: 10px;
+    border-top: 2px solid #ff6ec7;
+    box-shadow: 0px -5px 15px rgba(255, 110, 199, 0.7);
+}   
