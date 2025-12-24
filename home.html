@@ -10,8 +10,10 @@
 <body>
     <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
+            
             <h3>Welcome, <span id="user-name" class="text-primary"></span></h3>
             <div class="d-flex gap-2"> 
+
         <a id="warbler" class="btn btn-light-green btn-sm">Warbler Site ni Julian Curt Flores</a>
         <button id="logout" class="btn btn-outline-danger btn-sm">Logout</button>
     </div>
@@ -20,12 +22,15 @@
         <div class="card mb-4">
             <div class="card-body bg-dark categorybadge">
                 <div class="row g-2">
+
                     <div class="col-md-5">
                         <input type="text" id="task-name" class="form-control" placeholder="Task Name">
                     </div>
+
                     <div class="col-md-3">
-                        <input type="text" id="task-time" class="form-control" placeholder="Time (e.g. 9 AM)">
+                        <input type="text" id="discTime" class="form-control" placeholder="Time (e.g. 9 AM) or Description">
                     </div>
+
                     <div class="col-md-4">
                         <select id="task-class" class="form-select">
                             <option value="Work">Work</option>
@@ -33,9 +38,11 @@
                             <option value="Personal">Personal</option>
                         </select>
                     </div>
+
                     <div class="col-12 mt-2">
                         <textarea id="task-desc" class="form-control" rows="2" placeholder="Task Description"></textarea>
                     </div>
+
                     <div class="col-12 text-end mt-2">
                         <button id="btn-add" class="btn btn-primary px-5">Add Task</button>
                     </div>

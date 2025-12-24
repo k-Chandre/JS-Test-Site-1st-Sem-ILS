@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $('#btn-add').click(function() {
         let name = $('#task-name').val()
-        let time = $('#task-time').val();
+        let time = $('#discTime').val();
         let classification = $('#task-class').val();
         let description = $('#task-desc').val()
 
@@ -28,7 +28,7 @@ $(document).ready(function() {
         });
         
         saveAndRender();
-        $('#task-name, #task-time, #task-desc').val('');
+        $('#task-name, #discTime, #task-desc').val('');
     });
 
     $(document).on('change', '.check-complete', function() {
