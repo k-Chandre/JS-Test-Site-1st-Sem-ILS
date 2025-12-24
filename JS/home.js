@@ -62,8 +62,8 @@ $(document).ready(function() {
     function saveAndRender() {
         localStorage.setItem("currentUser", JSON.stringify(currentUser));
         let users = JSON.parse(localStorage.getItem("users"));
-        let index = users.findIndex(u => u.email === currentUser.email);
-        users[index] = currentUser;
+        let userIndex = users.findIndex(u => u.email === currentUser.email);
+        users[userIndex] = currentUser;
         localStorage.setItem("users", JSON.stringify(users));
         renderTasks();
     }
